@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{858AB763-2E04-16D6-CC78-9A25FA70C721}") = "Mario2D", "Assembly-CSharp-firstpass.csproj", "{5476EDA0-4E6B-FBD9-FA9D-87E09EC85BD1}"
+EndProject
+Project("{858AB763-2E04-16D6-CC78-9A25FA70C721}") = "Mario2D", "Assembly-CSharp.csproj", "{5DDD00A6-5984-F3E1-1ED5-56EE7A625F15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5476EDA0-4E6B-FBD9-FA9D-87E09EC85BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5476EDA0-4E6B-FBD9-FA9D-87E09EC85BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5476EDA0-4E6B-FBD9-FA9D-87E09EC85BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5476EDA0-4E6B-FBD9-FA9D-87E09EC85BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDD00A6-5984-F3E1-1ED5-56EE7A625F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDD00A6-5984-F3E1-1ED5-56EE7A625F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDD00A6-5984-F3E1-1ED5-56EE7A625F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDD00A6-5984-F3E1-1ED5-56EE7A625F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

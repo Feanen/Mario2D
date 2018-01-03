@@ -177,7 +177,6 @@ public class NewPlayerController : MonoBehaviour {
 		Vector2 originLeft = new Vector2 (pos.x - .06f, pos.y - .08f);
 		Vector2 originMiddle = new Vector2 (pos.x, pos.y - .08f);
 		Vector2 originRight = new Vector2 (pos.x + .06f, pos.y - .08f);
-
 		RaycastHit2D groundLeft = Physics2D.Raycast (originLeft, Vector3.down, velocity.y * Time.deltaTime, groundMask);
 		RaycastHit2D groundMiddle = Physics2D.Raycast (originMiddle, Vector3.down, velocity.y * Time.deltaTime, groundMask);
 		RaycastHit2D groundRight = Physics2D.Raycast (originRight, Vector3.down, velocity.y * Time.deltaTime, groundMask);
@@ -194,10 +193,14 @@ public class NewPlayerController : MonoBehaviour {
 				hitRay = groundRight;
 			}
 
-			if (hitRay.collider.tag == GameTagsAndLayers.ENEMY_TAG) {
+
+			if (hitRay.collider.tag == GameTagsAndLayers.ENEMY_TAG && this.transform.position.y >= hitRay.collider.transform.position.y + hitRay.collider.bounds.size.y) {
 
 				hitRay.collider.GetComponent<EnemyController> ().Crush ();
 				bounce = true;
+			} else if (hitRay.collider.tag == GameTagsAndLayers.ENEMY_TAG && this.transform.position.y < hitRay.collider.transform.position.y + hitRay.collider.bounds.size.y) {
+
+
 			}
 
 			pos.y = hitRay.collider.bounds.center.y + hitRay.collider.bounds.size.y / 2 + .08f;
